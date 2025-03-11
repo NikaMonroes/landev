@@ -169,7 +169,7 @@ video {
 .contact-section {
     position: relative;
     height: 100vh;
-    background: url("img/contacto.jpg") no-repeat center center/cover;
+    background: url('/landev/img/contacto.jpg') no-repeat center center/cover;
 }
 
 /* Overlay para la transparencia */
