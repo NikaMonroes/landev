@@ -1,0 +1,49 @@
+
+:root {
+    --primary-color: #0D3B66;
+    --secondary-color: #FAF0CA;
+    --accent-color: #F4D35E;
+    --highlight-color: #EE964B;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    text-align: right;
+}
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+}
+
+.slider img {
+    max-height: 100px; /* Ajusta el tamaño de las imágenes según lo necesites */
+    margin: 0 10px; /* Espaciado entre las imágenes */
+    opacity: 0.8; /* Opacidad de las imágenes */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+footer {
+    background-color: black ;
+    color: rgb(255, 255, 255);
+    padding: 100px;
+    text-align: center;
+}
