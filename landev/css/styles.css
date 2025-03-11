@@ -12,6 +12,52 @@ body {
     text-align: right;
 }
 
+/* Estilos para el contenedor de la barra de navegación */
+nav {
+padding: 10px 0;
+}
+
+/* Estilo para la lista */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+}
+
+/* Estilo para cada item de la lista */
+.nav-item {
+    margin: 0 20px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #0D3B66; /* Color del texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    padding: 10px 15px;
+    border-radius: 50px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para color y fondo */
+}
+
+/* Cambio de color cuando se pasa el cursor */
+.nav-link:hover {
+    background-color: #EE964B; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+    border-radius: 50px;
+}
+
+/* Estilo activo, si deseas añadirlo más tarde */
+.nav-link:active {
+    background-color: #0D3B66; /* Color de fondo cuando se hace clic */
+    color: #EE964B;
+
+}
+
+
 
 .slider-container {
     width: 100%;
