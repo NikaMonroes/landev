@@ -147,6 +147,24 @@ video {
 }
 
 
+.textend{
+    color: #0D3B66;
+    border-radius: 150px;
+    text-align: center;
+    
+    
+
+}
+
+.ens { /* boton para explorar servicios */
+    background-color: #EE964B;
+    color: #ffff;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+}
+
+
 footer {
     background-color: black ;
     color: rgb(255, 255, 255);
