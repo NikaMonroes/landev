@@ -8,6 +8,9 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .logo {
     text-align: right;
 }
@@ -41,6 +44,7 @@ nav ul li a:hover{
 
 h2 {
     text-transform: uppercase;
+    text-align: center;
 
 }
 h2 .title {
@@ -49,9 +53,13 @@ h2 .title {
 
 }
 
+.servicios {
+    padding: 100px;
+}
+
 .franja {
     background-color: black;
-    padding: 8.3vh;
+    padding: 15vh;
     align-items: center;
     margin-right: 0;
     margin-left: 0;
@@ -68,9 +76,12 @@ video {
     position: absolute;
     top: 50%;
     left: 30px;
+    padding-left:30px;
     margin-right: 40vh;
+
     transform: translate(0, -50%);
     text-align: left;
+
 }
 .overlay h2 {
     color: white;
@@ -120,7 +131,7 @@ video {
 }
 .frase {
     background-color: #F4D35E;
-    padding: 50px;
+    padding: 50px 140px;
 }
 
 
@@ -131,8 +142,6 @@ video {
     background-color: #F4D35E;
     font-size: 50px;
     padding-top: 2.3vh;
-
-
 }
 
 .tab p {
@@ -141,34 +150,11 @@ video {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-left: 60px;
-
-
+    
 }
 
-.bat {
-    justify-content: center;
-    background-color: #F4D35E;
-    padding: 20px;
-    font-size: 120%;
-    margin-right: 60px;
 
 
-}
-
-.bat button { /* boton para explorar servicios */
-    background-color: #EE964B;
-    color: #ffff;
-    border-radius: 50px;
-    border: none;
-    text-align: center;
-    padding: 10px;
-    font-size: 100%;
-    display: block;
-    padding: 10px 30px;
-
-
-}
 
 /* CSS CARRUSEL PROYECTOS */
 
@@ -176,6 +162,8 @@ video {
     position: relative;
     width: 80%;
     margin: 50px auto;
+    padding-bottom: 10vh;
+
   }
   
   .carousel {
@@ -219,19 +207,25 @@ video {
     color: #0D3B66;
     border-radius: 150px;
     text-align: center;
-    
-    
-
 }
 
-.ens { /* boton para explorar servicios */
+
+.ens {
+    display: inline-block;
+    padding: 10px 30px;
     background-color: #EE964B;
     color: #ffff;
     border-radius: 50px;
     border: none;
     text-align: center;
+    text-decoration: none;
 }
 
+.ens:hover {
+    background-color: var(--primary-color);
+}
+
+    
 
 /* AQUI EMPIEZA SECCION CONTACTO Fondo de la sección de contacto */
 .contact-section {
