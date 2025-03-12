@@ -121,7 +121,6 @@ video {
 .frase {
     background-color: #F4D35E;
     padding: 50px;
-    margin-bottom: 50px;
 }
 
 
@@ -171,31 +170,26 @@ video {
 
 }
 
-
+/* CSS CARRUSEL PROYECTOS */
 
 .carousel-container {
     position: relative;
     width: 80%;
-    max-width: 1200px;  /* Aumentamos el ancho para que se vean 2 imágenes a la vez */
     margin: 50px auto;
-}
+  }
   
-.carousel {
+  .carousel {
     overflow: hidden;
-}
+  }
   
-.slides {
+  .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-}
-  
-.slides img {
-    width: 50%; /* Mostrar 2 imágenes a la vez */
-    height: auto;
-    object-fit: cover;
-}
-  
-.arrow {
+  }
+  .slides img {
+    width: 50% !important;
+  }
+  .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,19 +199,20 @@ video {
     padding: 10px;
     cursor: pointer;
     color: white;
-}
+  }
   
-.left-arrow {
+  .left-arrow {
     left: 0;
-}
+  }
   
-.right-arrow {
+  .right-arrow {
     right: 0;
-}
+  }
   
-.arrow:hover {
+  .arrow:hover {
     background-color: rgba(255, 255, 255, 0.8);
-}
+  }
+  
 
 
 .textend{
@@ -268,12 +263,10 @@ video {
 
 .content-right h2 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
 }
 
 .content-right p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
 }
 
 .content-right button {
@@ -302,12 +295,10 @@ video {
 
 .form-container h2 {
     font-size: 2rem;
-    margin-bottom: 15px;
 }
 
 .form-container p {
     font-size: 1.1rem;
-    margin-bottom: 25px;
 }
 
 form {

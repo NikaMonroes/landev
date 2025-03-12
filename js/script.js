@@ -13,31 +13,6 @@ window.addEventListener('load', function () {
     slider.style.animationDuration = `${speed}s`;  // Duración de la animación
 });
 
-
-let currentIndex = 0;
-
-const slides = document.querySelector('.slides');
-const totalSlides = document.querySelectorAll('.slides .slide').length;
-
-function moveSlide(direction) {
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1; // Regresa a la última imagen
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0; // Regresa a la primera imagen
-  }
-
-  // Desplazar el carrusel
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Cambiar la imagen cada 5 segundos automáticamente
-setInterval(() => {
-  moveSlide(1);
-}, 5000);
-
-
 let currentIndex = 0;
 
 const slides = document.querySelector('.slides');
