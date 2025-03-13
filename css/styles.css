@@ -363,15 +363,12 @@ footer {
     color: #FAF0CA;
     font-size: 25px;  /* Cambia este valor para ajustar el tamaño */
     transition: color 0.3s ease, transform 0.3s ease;  /* Transición suave para color y movimiento */
-    color: #EE964B;      /* Puedes ajustar el color del ícono */
 }
 
 .iconos:hover {
 transform: scale(1.1);  /* Aumenta ligeramente el tamaño del ícono */
-color: #8eb012;   /* Cambia el color del ícono cuando el cursor pasa sobre él */
 }
 
-}
 
 /* landing nosotros*/
 /* Banner */
@@ -902,6 +899,8 @@ color: #8eb012;   /* Cambia el color del ícono cuando el cursor pasa sobre él 
 .politica-title-custom {
     font-size: 2em;
     margin-bottom: 15px;
+    font-weight: bold;
+
 }
 
 /* Estilos para los párrafos */
@@ -910,3 +909,8 @@ color: #8eb012;   /* Cambia el color del ícono cuando el cursor pasa sobre él 
     line-height: 1.6;
 }
 
+.politica-container-custom:hover {
+box-shadow: 0 8px 16px rgba(0.2, 0.2, 0.2, 0.2);  /* Sombra más intensa */
+transition: cubic-bezier(0.10);
+
+}
