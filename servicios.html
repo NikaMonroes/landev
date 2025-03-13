@@ -4,28 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Servicios</title>
+    <title>Página de Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
     <header class="container d-flex justify-content-between align-items-center py-3">
         <div class="logo">
-            <img src="/img/logo.png" alt="Logo" width="150">
+            <img src="img/logo.png" alt="Logo">
         </div>
+
+         <!--menu============================-->
 
         <nav class="menu">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/servicios.html">Servicios</a></li>
-                <li><a href="/nosotros.html">Nosotros</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
             </ul>
         </nav>
 
     </header>
+
+  <!-- Banner Carrusel -->
+  <div class="banner-container-lande">
+    <button class="arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+    
+    <div class="banner-lande">
+      <div class="slides-lande">
+        <!-- Aquí agregamos tus 8 fotos para el banner -->
+        <div class="slide-lande">
+          <img src="img/foto1.jpg" alt="Foto 1">
+          <div class="text-overlay-lande">
+            <h1>Bienvenido</h1>
+            <p>Descubre lo mejor de nuestra oferta inventarse eso</p>
+          </div>
+        </div>
+        <div class="slide-lande">
+          <img src="img/foto2.jpg" alt="Foto 2">
+          <div class="text-overlay-lande">
+            <h1>Ofertas Especiales</h1>
+            <p>¡No te lo pierdas! innventarse algo en todos los slides</p>
+          </div>
+        </div>
+        <div class="slide-lande">
+          <img src="img/foto3.jpg" alt="Foto 3">
+          <div class="text-overlay-lande">
+            <h1>Exclusivos Productos</h1>
+            <p>Solo para ti, ¡aprovecha!</p>
+          </div>
+        </div>
+        <div class="slide-lande">
+          <div class="text-overlay-lande">
+            <h1>Gran Variedad</h1>
+            <p>Explora nuestra gama completa</p>
+          </div>
+          <img src="img/foto4.jpg" alt="Foto 4">
+        </div>
+        <!-- Agrega más slides si lo deseas -->
+      </div>
+    </div>
+
+    <button class="arrow-right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+      
+
+  <!-- Servicio 1 -->
+
+    <section class="one-services d-flex">
+
+        <div class="one-item">
+            <div class="one-image">
+                 <img src="./img/servicio1.jpg" alt="marketing redes sociales">
+                 </div>
+                  <div class="one-text">
+                  <ul><H2>MARKETING DE REDES SOCIALES</H2></ul>
+                  <ul><p>Genera confianza y autoridad con contenido valioso. Nuestro enfoque de marketing de contenidos te ayuda a crear material relevante que conecta con tu audiencia, educa sobre tu marca y, sobre todo, crea relaciones duraderas.
+                En Landev, nos encargamos de cada detalle, desde la estrategia hasta la ejecución, para que puedas enfocarte en lo que mejor sabes hacer.</p></ul>
+                   </div>
+         </div>
+
+   </section>
+
+    <!-- end Servicio 1 -->
+
+
+    <!-- Servicio 2 -->
+
+    <section class="two-services d-flex">
+    
+            <div class="two-item">
+                <div class="two-text">
+                    <ul><H2>MARKETING DE CONTENIDOS</H2></ul>
+                    <ul><p>Impulsa tu marca a través de plataformas sociales. En Landev, creamos estrategias de marketing digital personalizadas para que tu negocio se conecte con su audiencia de manera efectiva. Desde la gestión de redes sociales hasta la creación de contenido atractivo, nuestro objetivo es aumentar tu visibilidad y fortalecer tu presencia en plataformas como Instagram, Facebook y LinkedIn.</p></ul>
+                    </div>
+                     <div class="two-image">
+                     <img src="./img/servicio2.jpg" alt="marketing contenidos">
+                     </div>
+             </div>
+    
+       </section>
+    
+        <!-- end Servicio 2 -->
+
+<!-- Servicio 3 -->
+
+<section class="three-services d-flex">
+
+    <div class="three-item">
+        <div class="three-image">
+             <img src="./img/servicio3.jpg" alt="comercio electronico">
+             </div>
+              <div class="three-text">
+              <ul><H2>COMERCIO ELECTRÓNICO</H2></ul>
+             <ul><p>Transforma tu negocio con una tienda online profesional. En Landev, te ayudamos a crear y optimizar tu comercio electrónico para que vendas de manera eficiente y segura. Desde la creación de la tienda hasta la integración de métodos de pago, ofrecemos soluciones completas para que puedas llegar a tus clientes de forma rápida y sencilla.</p></ul>
+             </div>
+     </div>
+
+</section>
+
+<!-- end Servicio 3 -->
+
+ <!-- Servicio 4 -->
+
+ <section class="four-services d-flex">
+    
+    <div class="four-item">
+        <div class="four-text">
+             <ul><H2>ANALITICA Y AUTOMATIZACIÓN</H2></ul>
+             <ul><p>Las decisiones basadas en datos son las más acertadas. En Landev, utilizamos herramientas de analítica avanzada para monitorear el rendimiento de tu sitio web, campañas publicitarias y redes sociales. Además, implementamos procesos de automatización que optimizan tu flujo de trabajo, ahorrando tiempo y aumentando la eficiencia.</p></ul>
+            </div>
+            <div class="four-image">
+             <img src="./img/servicio4.jpg" alt="analitica y automatizacion">
+             </div>
+     </div>
+
+</section>
+
+<!-- end Servicio 4 -->
+
+
+<footer>
+    <div class="d-flex justify-content-between left">
+        <div class="iconos justify-content-between - d-flex left">
+            <div>
+                <a href="https://www.instagram.com/tuusuario" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tuusuario" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/tuusuario" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@tuusuario" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>            
+        <a href="terminos.html" class="text-white">Términos y Políticas</a>
+    </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+ 

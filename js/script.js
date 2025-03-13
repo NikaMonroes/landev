@@ -1,38 +1,67 @@
-// Para hacer que el slider sea infinito de forma automática
-window.addEventListener('load', function () {
-    const slider = document.querySelector('.slider');
-    const sliderImages = document.querySelectorAll('.slider img');
+document.addEventListener("DOMContentLoaded", function () {
+  // Slider 1: Banner de servicios
+  const slidesLande = document.querySelector('.slides-lande');
+  if (slidesLande) {
+    let currentIndexLande = 0;
+    const totalSlidesLande = document.querySelectorAll('.slides-lande .slide-lande').length;
 
-    // Duplicamos el contenido para hacerlo infinito
-    slider.innerHTML += slider.innerHTML;
+    function moveSlideLande(direction) {
+      currentIndexLande += direction;
 
-    // Ajustamos el tiempo de animación según el número de imágenes que tengamos
-    const speed = 20; // Asegúrate de ajustar la velocidad del movimiento
-    const slideWidth = sliderImages[0].width + 20; // Ancho de las imágenes + márgenes
+      if (currentIndexLande < 0) {
+        currentIndexLande = totalSlidesLande - 1;
+      } else if (currentIndexLande >= totalSlidesLande) {
+        currentIndexLande = 0;
+      }
 
-    slider.style.animationDuration = `${speed}s`;  // Duración de la animación
-});
+      slidesLande.style.transform = `translateX(-${currentIndexLande * 100}%)`;
+    }
 
-let currentIndex = 0;
+    setInterval(() => {
+      moveSlideLande(1);
+    }, 5000);
 
-const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
-const totalSlides = images.length;
+    const leftArrow = document.querySelector(".arrow-left");
+    const rightArrow = document.querySelector(".arrow-right");
 
-// Función para mover el carrusel
-function moveSlide(direction) {
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 2; // Mostrar las últimas dos imágenes cuando se desplace hacia la izquierda
-  } else if (currentIndex >= totalSlides - 1) {
-    currentIndex = 0; // Regresar al principio cuando llegamos al final
+    if (leftArrow && rightArrow) {
+      leftArrow.addEventListener("click", () => moveSlideLande(-1));
+      rightArrow.addEventListener("click", () => moveSlideLande(1));
+    }
   }
 
-  slides.style.transform = `translateX(-${currentIndex * 50}%)`; // Desplazar el carrusel
-}
+  // Slider 2: Carrusel de imágenes infinito
+  const slider = document.querySelector('.slider');
+  if (slider) {
+    const sliderImages = document.querySelectorAll('.slider img');
+    slider.innerHTML += slider.innerHTML; // Duplica el contenido
 
-// Cambiar la imagen cada 3 segundos (opcional)
-setInterval(() => {
-  moveSlide(1);
-}, 10000);
+    const speed = 20;
+    const slideWidth = sliderImages[0].width + 20;
+    slider.style.animationDuration = `${speed}s`;
+  }
+
+  // Slider 3: Carrusel general con botones
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const totalSlides = images.length;
+
+  if (slides) {
+    function moveSlide(direction) {
+      currentIndex += direction;
+
+      if (currentIndex < 0) {
+        currentIndex = totalSlides - 2;
+      } else if (currentIndex >= totalSlides - 1) {
+        currentIndex = 0;
+      }
+
+      slides.style.transform = `translateX(-${currentIndex * 50}%)`;
+    }
+
+    setInterval(() => {
+      moveSlide(1);
+    }, 10000);
+  }
+});

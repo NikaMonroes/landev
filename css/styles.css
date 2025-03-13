@@ -7,12 +7,15 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0%;
 }
 a {
     text-decoration: none;
 }
 .logo {
     text-align: right;
+    padding: 0px;
+
 }
 
 nav ul{
@@ -36,7 +39,7 @@ nav ul li a:hover{
 .video-container {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -351,9 +354,25 @@ button:hover {
 footer {
     background-color: black ;
     color: rgb(255, 255, 255);
-    padding: 100px;
+    padding: 40px;
     text-align: center;
+    
 }
+
+.iconos {
+    color: #FAF0CA;
+    font-size: 25px;  /* Cambia este valor para ajustar el tamaño */
+    transition: color 0.3s ease, transform 0.3s ease;  /* Transición suave para color y movimiento */
+    color: #EE964B;      /* Puedes ajustar el color del ícono */
+}
+
+.iconos:hover {
+transform: scale(1.1);  /* Aumenta ligeramente el tamaño del ícono */
+color: #8eb012;   /* Cambia el color del ícono cuando el cursor pasa sobre él */
+}
+
+}
+
 /* landing nosotros*/
 /* Banner */
 .banner img {
@@ -442,5 +461,452 @@ footer {
         width: 80%;
         margin-bottom: 20px;
     }
+}
+
+
+  
+  /* Estilos Generales */
+  .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .banner-container-lande {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Puedes ajustar la altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  .banner-lande {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides-lande {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .slide-lande {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%; /* Garantizamos que cada slide ocupe el 100% del ancho del contenedor */
+  }
+  
+  .slide-lande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que las imágenes se ajusten bien */
+  }
+  
+  .text-overlay-lande {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el texto */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
+  }
+  
+  .arrow-left:hover, .arrow-right:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  
+  /* Sección de Servicios */
+
+/* Estilo general para la sección */
+.one-services {
+    display: flex;  /* Usamos flexbox para alinear los elementos */
+    align-items: center;  /* Centra los elementos de forma vertical */
+    padding: 0px !important;
+    background-color: #fff;
+    margin: 0 !important;
+  }  
+  /* Contenedor de cada ítem de servicio */
+  .one-item {
+    display: flex;
+    align-items: center;  /* Alineación en el eje vertical */
+    background-color: #ffffff;  /* Fondo blanco para los ítems */
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-bottom:0 !important;
+  }
+  
+  
+  /* Imagen del servicio */
+  .one-image {
+    max-width: 100%;
+    padding:0 !important;
+    margin: 0 !important;
+    object-fit: cover;
+  }
+  .one-image img {
+    max-width: 100%;  /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    object-fit: cover;  /* La imagen cubre el área del contenedor sin deformarse */
+    margin-right: 0px;  /* Espacio entre la imagen y el texto */
+    margin-bottom: 0 !important;
+    margin-left: 0px;
+  }
+  
+  /* Estilo del texto */
+  .one-text {
+    max-width: 600px;  /* Limita el ancho máximo del texto */
+    align-items: left;
+  }
+  
+  .one-text h2 {
+    font-size: 24px;  /* Tamaño de la fuente del título */
+    color: #EE964B;  /* Color del texto */
+    margin-bottom: 15px;  /* Espacio debajo del título */
+    font-weight: bold;  /* Negrita para el título */
+    align-items: left;
+    text-align: left; /*alinear a la derecha*/
+    
+  }
+  
+  .one-text p {
+    font-size: 16px;  /* Tamaño de la fuente para el párrafo */
+    color: #0D3B66;  /* Color para el texto */
+    line-height: 1.6;  /* Altura de línea para mayor legibilidad */
+    margin-bottom: 10px;  /* Espacio debajo del párrafo */
+  }
+  
+  .one-text ul {
+    list-style: none;  /* Elimina el estilo de lista predeterminado */
+    margin-bottom: 0px;
+  }
+  
+  /* Estilos para dispositivos pequeños (móviles y tabletas) */
+  @media (max-width: 768px) {
+    .one-item {
+      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
+      text-align: center;  /* Centra el texto */
+    }
+  
+    .one-image img {
+      width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+      margin-bottom: 20px;  /* Espacio entre la imagen y el texto */
+    }
+  
+    .one-text {
+      max-width: 100%;  /* Elimina el límite de ancho del texto */
+    }
+  }
+  
+  
+/* end one services*/
+
+
+/* Estilo general para la sección */
+.two-services {
+    display: flex;  /* Usamos flexbox para alinear los elementos */
+    align-items: center;  /* Centra los elementos de forma vertical */
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan si no caben */
+    padding: 0px;
+    background-color: #000000;  /* Color de fondo de la sección */
+  }
+  
+  /* Contenedor de cada ítem de servicio */
+  .two-item {
+    display: flex;
+    align-items: center;  /* Alineación en el eje vertical */
+    background-color: #000000;  /* Fondo blanco para los ítems */
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  
+  /* Estilo para el texto */
+  .two-text {
+    max-width: 600px;  /* Limita el ancho máximo del texto */
+    margin-right: 40px;
+  }
+  
+  .two-text h2 {
+    font-size: 24px;  /* Tamaño de la fuente del título */
+    color: #ff7b00;  /* Color del texto */
+    margin-bottom: 15px;  /* Espacio debajo del título */
+    font-weight: bold;  /* Negrita para el título */
+    text-align: left;  /* Alineación a la izquierda */
+  }
+  
+  .two-text p {
+    font-size: 16px;  /* Tamaño de la fuente para el párrafo */
+    color: #ffffff;  /* Color gris para el texto */
+    line-height: 1.6;  /* Altura de línea para mayor legibilidad */
+    margin-bottom: 10px;  /* Espacio debajo del párrafo */
+  }
+  
+  .two-text ul {
+    list-style: none;  /* Elimina el estilo de lista predeterminado */
+    margin-bottom: 0px;
+  }
+  
+  /* Imagen del servicio */
+  .two-image img {
+    max-width: 100%;  /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    object-fit: cover;  /* La imagen cubre el área del contenedor sin deformarse */
+    width: 700px;  /* Ancho fijo para la imagen */
+    margin-left:0px;  /* Espacio entre la imagen y el texto */
+    margin-bottom: 0px;
+    
+  }
+  
+  /* Estilos para dispositivos pequeños (móviles y tabletas) */
+  @media (max-width: 768px) {
+    .two-item {
+      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
+      text-align: center;  /* Centra el texto */
+    }
+  
+    .two-image img {
+      width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+      margin-bottom: 20px;  /* Espacio entre la imagen y el texto */
+    }
+  
+    .two-text {
+      max-width: 100%;  /* Elimina el límite de ancho del texto */
+    }
+  }
+  
+/* end services two*/
+
+/* Estilo general para la sección */
+.three-services {
+    display: flex;  /* Usamos flexbox para alinear los elementos */
+    align-items: center;  /* Centra los elementos de forma vertical */
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan si no caben */
+    padding: 0px;
+    background-color: #fff;
+  }  
+  /* Contenedor de cada ítem de servicio */
+  .three-item {
+    display: flex;
+    align-items: center;  /* Alineación en el eje vertical */
+    background-color: #ffffff;  /* Fondo blanco para los ítems */
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0%;
+  }
+  
+  
+  /* Imagen del servicio */
+  .three-image img {
+    max-width: 100%;  /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    object-fit: cover;  /* La imagen cubre el área del contenedor sin deformarse */
+    margin-right: 20px;  /* Espacio entre la imagen y el texto */
+    margin-bottom: 0px;
+  }
+  /* Estilo del texto */
+  .three-text {
+    max-width: 600px;  /* Limita el ancho máximo del texto */
+    align-items: left;
+  }
+  
+  .three-text h2 {
+    font-size: 24px;  /* Tamaño de la fuente del título */
+    color: #EE964B;  /* Color del texto */
+    margin-bottom: 15px;  /* Espacio debajo del título */
+    font-weight: bold;  /* Negrita para el título */
+    align-items: left;
+    text-align: left; /*alinear a la derecha*/
+    
+  }
+  
+  .three-text p {
+    font-size: 16px;  /* Tamaño de la fuente para el párrafo */
+    color: #0D3B66;  /* Color para el texto */
+    line-height: 1.6;  /* Altura de línea para mayor legibilidad */
+    margin-bottom: 10px;  /* Espacio debajo del párrafo */
+  }
+  
+  .three-text ul {
+    list-style: none;  /* Elimina el estilo de lista predeterminado */
+    margin-bottom: 0px;
+  }
+  
+  /* Estilos para dispositivos pequeños (móviles y tabletas) */
+  @media (max-width: 768px) {
+    .three-item {
+      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
+      text-align: center;  /* Centra el texto */
+    }
+  
+    .three-image img {
+      width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+      margin-bottom: 20px;  /* Espacio entre la imagen y el texto */
+    }
+  
+    .three-text {
+      max-width: 100%;  /* Elimina el límite de ancho del texto */
+    }
+  }
+  
+  
+/* end services three*/
+
+
+/* Estilo general para la sección */
+.four-services {
+    display: flex;  /* Usamos flexbox para alinear los elementos */
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan si no caben */
+    padding: 0px;
+    background-color: #ff7b00;  /* Color de fondo de la sección */
+  }
+  
+  /* Contenedor de cada ítem de servicio */
+  .four-item {
+    display: flex;
+    align-items: center;  /* Alineación en el eje vertical */
+    background-color: #ff7b00;  /* Fondo blanco para los ítems */
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+  
+  /* Estilo para el texto */
+  .four-text {
+    max-width: 600px;  /* Limita el ancho máximo del texto */
+    margin-right: 40px;
+  }
+  
+  .four-text h2 {
+    font-size: 24px;  /* Tamaño de la fuente del título */
+    color: #ffffff;  /* Color del texto */
+    margin-bottom: 15px;  /* Espacio debajo del título */
+    font-weight: bold;  /* Negrita para el título */
+    text-align: left;  /* Alineación a la izquierda */
+  }
+  
+  .four-text p {
+    font-size: 16px;  /* Tamaño de la fuente para el párrafo */
+    color: #000000;  /* Color gris para el texto */
+    line-height: 1.6;  /* Altura de línea para mayor legibilidad */
+    margin-bottom: 10px;  /* Espacio debajo del párrafo */
+  }
+  
+  .four-text ul {
+    list-style: none;  /* Elimina el estilo de lista predeterminado */
+    margin-bottom: 0px;
+  }
+  
+  /* Imagen del servicio */
+  .four-image img {
+    max-width: 100%;  /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    object-fit: cover;  /* La imagen cubre el área del contenedor sin deformarse */
+    width: 700px;  /* Ancho fijo para la imagen */
+    margin-left:0px;  /* Espacio entre la imagen y el texto */
+    margin-bottom: 0px;
+  }
+  
+  /* Estilos para dispositivos pequeños (móviles y tabletas) */
+  @media (max-width: 768px) {
+    .four-item {
+      flex-direction: column;  /* Cambia la disposición a columna en pantallas pequeñas */
+      text-align: center;  /* Centra el texto */
+    }
+  
+    .four-image img {
+      width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+      margin-bottom: 20px;  /* Espacio entre la imagen y el texto */
+    }
+  
+    .four-text {
+      max-width: 100%;  /* Elimina el límite de ancho del texto */
+    }
+  }
+  
+/* end services four*/
+
+/*end services*/
+
+
+/*================================ terminos y politicas=============*/
+
+/* Estilos base para los contenedores */
+.politica-container-custom {
+    width: 80%; /* Ancho del contenedor */
+    padding: 50px;
+    bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Posiciona el contenedor de manera absoluta */
+    left: 50%; /* Lo mueve al 50% de la izquierda */
+    transform: translateX(-50%); /* Ajusta el centrado horizontal */ 
+      
+}
+
+/* Contenedor amarillo (Política de Privacidad) */
+.politica-privacidad-custom {
+    top: 40%; /* Posición vertical del primer contenedor */
+    background-color: #F4D35E; /* Amarillo */
+    color: #333;
+   
+}
+
+/* Contenedor azul (Términos y Condiciones) */
+.politica-terminos-custom {
+    top: 80%; /* Posición vertical del segundo contenedor */
+    background-color: #0D3B66; /* Azul */
+    color: white;
+    
+}
+
+/* Estilos para los títulos */
+.politica-title-custom {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los párrafos */
+.politica-text-custom {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
