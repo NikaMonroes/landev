@@ -95,6 +95,7 @@ video {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     line-height: 1.45;
+    font-weight: bold;
 }
 
 .overlay button {
@@ -106,6 +107,7 @@ video {
     border-radius: 50px;
     font-size: 16px;
     border: none;
+    font-weight: bold;
 }
 
 .slider-container {
@@ -271,7 +273,7 @@ video {
     color: #ffffff;
     padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1.1rem;
 }
@@ -288,6 +290,12 @@ video {
     background-color: rgba(0, 0, 0, 0.7); /* Fondo negro trasparente */
     padding: 30px;
     border-radius: 10px;
+}
+
+.form-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Sombra más intensa */
+    transform: translateY(-5px);  /* Efecto de elevación al pasar el ratón */
+
 }
 
 .form-container h2 {
@@ -318,13 +326,14 @@ button {
     color: #fff;
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1.1rem;
 }
 
 button:hover {
-    background-color: #ee964b;
+    background-color: #F4D35E;
+    color: #000000;
 }
 
 .cta-section {
@@ -347,6 +356,13 @@ button:hover {
     border: none;
     cursor: pointer;
     font-size: 1em;
+    border-radius: 50px;
+}
+
+.cta-section button:hover {
+    background-color: #F4D35E;
+    color: #000000;
+
 }
 
 
@@ -388,6 +404,8 @@ transform: scale(1.1);  /* Aumenta ligeramente el tamaño del ícono */
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #EE964B;
+    font-weight: bold;
 }
 
 .about-text p {
@@ -423,8 +441,9 @@ transform: scale(1.1);  /* Aumenta ligeramente el tamaño del ícono */
 
 .card h3 {
     font-size: 1.8rem;
-    color: #333;
+    color: #EE964B;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .card p {
@@ -434,6 +453,7 @@ transform: scale(1.1);  /* Aumenta ligeramente el tamaño del ícono */
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: #000000;
 }
 
 
